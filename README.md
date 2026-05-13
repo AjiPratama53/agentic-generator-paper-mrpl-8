@@ -1,3 +1,12 @@
+# Metode Rekayasa Perangkat Lunak KOMB - Ilmu Komputer UGm 2026
+
+Kelompok 8:
+
+- Rayhan Haldi Hermawan (24/545406/PA/23176)
+- Pratama Nanindra Aji (24/533677/PA/22604)
+- Muhammad Rayyan Buna Satria (24/543564/PA/23096)
+- Kevin Febriano (24/541948/PA/23002)
+
 # Agentic AI Framework Generator
 
 ## Description
@@ -25,27 +34,33 @@ The generator bridges the gap between abstract agentic AI patterns defined in on
    git clone https://github.com/nauraranantya/agentic-generator.git
    cd agentic-generator
    ```
-2.	Create and activate a virtual environment:
-   ```bash
-  python -m venv venv
-  source venv/bin/activate       # macOS/Linux
-  venv\Scripts\activate          # Windows
-  ```
+2. Create and activate a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate       # macOS/Linux
+venv\Scripts\activate          # Windows
+```
+
 3. Install dependencies:
-  ```bash
-  pip install -r requirements.txt
-  ```
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
 ### Option 1: Generate Multi-Agent Code from Knowledge Graph
+
 1. Place the Knowledge Graph (in .ttl or .rdf format) inside the data/ folder, or use the existing dummy data in `data/` or `kg_g3/`.
    Example: `data/dummy_kg.ttl`
 
 2. Run the automated pipeline:
+
    ```bash
    python runner.py
    ```
+
    This will automatically:
    - Parse the knowledge graph ontology
    - Generate CrewAI framework code
@@ -56,27 +71,33 @@ The generator bridges the gap between abstract agentic AI patterns defined in on
    - `autogen_generated.py`
 
 ### Option 2: Test Workflow Simulation (Demo)
+
 1. Place your gpt-4o-mini API key in a `.env` file in the root directory:
+
    ```
    OPENAI_API_KEY=your-api-key-here
    ```
 
 2. Run the pre-configured workflow test:
+
    ```bash
    python test_email_workflow.py
    ```
+
    This demonstrates a complete email auto-responder workflow using CrewAI with:
    - Email classification
    - Automated response generation
    - Quality review process
 
    OR
-   
+
    ```bash
    python test_cust_support_workflow.py
    ```
+
    This demonstrates a customer support ticket handling workflow using AutoGen with:
    - Ticket classification and prioritization
    - Multi-agent collaboration for resolution
    - Automated response generation
+
 3. View the complete workflow execution and results in the console output.
