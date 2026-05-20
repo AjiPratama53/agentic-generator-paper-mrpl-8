@@ -1,4 +1,4 @@
-# Metode Rekayasa Perangkat Lunak KOMB - Ilmu Komputer UGm 2026
+# Metode Rekayasa Perangkat Lunak KOMB - Ilmu Komputer UGM 2026
 
 Kelompok 8:
 
